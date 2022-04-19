@@ -1,4 +1,16 @@
 /* Your Code Here */
+function createEmployeeRecord(arr) {
+    return {
+        firstName: arr[0],
+        familyName: arr[1],
+        title: arr[2],
+        payPerHour: arr[3],
+        timeInEvents: [],
+        timeOutEvents: []
+    }
+}
+
+function createEmployeeRecords()
 
 /*
  We're giving you this function. Take a look at it, you might see some usage
@@ -20,4 +32,33 @@ const allWagesFor = function () {
 
     return payable
 }
+
+
+
+
+// LOST CONTEXT BUG
+
+// const messageConfig = {
+//     frontContent: "Happy Birthday, Odin One-Eye!",
+//     insideContent: "From Asgard to Nifelheim, you're the best all-father ever.\n\nLove,",
+//     closing: {
+//         Thor: "Admiration, respect and Love",
+//         Loki: "Your Son",
+//     },
+//     signatories: ["Thor", "Loki"],
+// };
+
+// const printCard = function() {
+//     console.log(this.frontContent);
+//     console.log(this.insideContent);
+
+//     // console.log("Before forEach: " + this)
+//     this.signatories.forEach(function(signatory) {
+//         const message = `${this.closing[signatory]}, ${signatory}`;
+//         console.log(message);
+//         // console.log("inside forEach: ", this)
+//     }, this);
+// };
+
+// printCard.call(messageConfig)
 
